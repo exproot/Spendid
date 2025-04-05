@@ -27,6 +27,7 @@ struct SignInView: View {
         Text("Sign In")
           .font(.callout)
       }
+      .disabled(!viewModel.canSubmit)
       .buttonStyle(.borderedProminent)
 
       Button {
@@ -34,6 +35,11 @@ struct SignInView: View {
       } label: {
         Text("Don't have an account ? Sign Up")
       }
+    }
+    .alert("Auth Error", isPresented: $viewModel.isErrorPresented) {
+      Button("Ok") { }
+    } message: {
+      Text(viewModel.errorMessage)
     }
     .textFieldStyle(.roundedBorder)
     .frame(width: 288)

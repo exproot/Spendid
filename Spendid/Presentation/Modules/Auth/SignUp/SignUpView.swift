@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-
-
 struct SignUpView: View {
 
   @ObservedObject var viewModel: SignUpViewModel
@@ -18,19 +16,23 @@ struct SignUpView: View {
       TextField("Email", text: $viewModel.email)
         .textContentType(.emailAddress)
         .keyboardType(.emailAddress)
-        .autocapitalization(.none)
+        .textInputAutocapitalization(.never)
         .autocorrectionDisabled()
 
       SecureField("Password", text: $viewModel.password)
-      SecureField("Password Confirmation", text: $viewModel.passwordConfirmation)
 
       Button {
         viewModel.createAccount()
       } label: {
         Text("Sign Up")
+          .frame(maxWidth: .infinity)
+          .padding()
+          .background(viewModel.canSubmit ? Color.blue : Color.gray)
+          .foregroundStyle(Color.white)
+          .clipShape(.rect(cornerRadius: 10))
           .font(.callout)
       }
-      .buttonStyle(.borderedProminent)
+      .disabled(!viewModel.canSubmit)
 
       Button {
         viewModel.didTapSignIn()
@@ -38,10 +40,15 @@ struct SignUpView: View {
         Text("Already have an account ? Sign In")
       }
     }
+    .alert("Auth Error", isPresented: $viewModel.isErrorPresented) {
+      Button("Ok") { }
+    } message: {
+      Text(viewModel.errorMessage)
+    }
     .textFieldStyle(.roundedBorder)
-    .padding(.horizontal, 40)
-  }
+    .padding()
 
+  }
 }
 
 #Preview {
