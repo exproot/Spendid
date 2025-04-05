@@ -54,6 +54,14 @@
 		70F426242DA18EF600D5F182 /* AuthRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		70881B972DA1C105000B60D2 /* Utilities */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
 		70F4257D2DA1603700D5F182 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
@@ -145,6 +153,7 @@
 		70F425B72DA1618400D5F182 /* Spendid */ = {
 			isa = PBXGroup;
 			children = (
+				70881B972DA1C105000B60D2 /* Utilities */,
 				70F425AD2DA1618400D5F182 /* Application */,
 				70F425B02DA1618400D5F182 /* Infrastructure */,
 				70F425AE2DA1618400D5F182 /* Data */,
@@ -253,6 +262,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				70881B972DA1C105000B60D2 /* Utilities */,
 			);
 			name = Spendid;
 			packageProductDependencies = (
