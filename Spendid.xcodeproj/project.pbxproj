@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7047D3552DA2A5A5009EE704 /* FormValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7047D3532DA2A5A5009EE704 /* FormValidator.swift */; };
+		7047D3572DA2A5B9009EE704 /* BudgetDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7047D3562DA2A5B9009EE704 /* BudgetDTO.swift */; };
+		7047D3592DA2A790009EE704 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7047D3582DA2A790009EE704 /* Transaction.swift */; };
+		7047D35B2DA2A8C4009EE704 /* BudgetRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7047D35A2DA2A8C4009EE704 /* BudgetRepository.swift */; };
+		7047D35D2DA2A98D009EE704 /* TransactionDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7047D35C2DA2A98D009EE704 /* TransactionDTO.swift */; };
+		7047D35F2DA2A993009EE704 /* Budget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7047D35E2DA2A993009EE704 /* Budget.swift */; };
+		7047D3612DA2A9F2009EE704 /* TransactionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7047D3602DA2A9F2009EE704 /* TransactionRepository.swift */; };
+		7047D3632DA2ADDF009EE704 /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7047D3622DA2ADDF009EE704 /* FirestoreService.swift */; };
+		7047D3652DA2B098009EE704 /* FirestoreBudgetRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7047D3642DA2B098009EE704 /* FirestoreBudgetRepositoryImpl.swift */; };
+		7047D3782DA2BDCE009EE704 /* FirestoreUserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7047D3772DA2BDCE009EE704 /* FirestoreUserDTO.swift */; };
 		70F425B82DA1618400D5F182 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F425AB2DA1618400D5F182 /* AppDelegate.swift */; };
 		70F425B92DA1618400D5F182 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F425AC2DA1618400D5F182 /* SceneDelegate.swift */; };
 		70F425BA2DA1618400D5F182 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70F425B22DA1618400D5F182 /* Assets.xcassets */; };
@@ -32,6 +42,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7047D3532DA2A5A5009EE704 /* FormValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormValidator.swift; sourceTree = "<group>"; };
+		7047D3562DA2A5B9009EE704 /* BudgetDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetDTO.swift; sourceTree = "<group>"; };
+		7047D3582DA2A790009EE704 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		7047D35A2DA2A8C4009EE704 /* BudgetRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetRepository.swift; sourceTree = "<group>"; };
+		7047D35C2DA2A98D009EE704 /* TransactionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDTO.swift; sourceTree = "<group>"; };
+		7047D35E2DA2A993009EE704 /* Budget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Budget.swift; sourceTree = "<group>"; };
+		7047D3602DA2A9F2009EE704 /* TransactionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRepository.swift; sourceTree = "<group>"; };
+		7047D3622DA2ADDF009EE704 /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
+		7047D3642DA2B098009EE704 /* FirestoreBudgetRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreBudgetRepositoryImpl.swift; sourceTree = "<group>"; };
+		7047D3662DA2B89C009EE704 /* FirestoreTransactionRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreTransactionRepositoryImpl.swift; sourceTree = "<group>"; };
+		7047D3772DA2BDCE009EE704 /* FirestoreUserDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreUserDTO.swift; sourceTree = "<group>"; };
 		70F425802DA1603700D5F182 /* Spendid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spendid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70F425AB2DA1618400D5F182 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70F425AC2DA1618400D5F182 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,9 +76,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		70881B972DA1C105000B60D2 /* Utilities */ = {
+		7047D36D2DA2BB89009EE704 /* Transactions */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Utilities;
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		7047D36E2DA2BB90009EE704 /* Budgets */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Budgets;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -77,6 +103,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7047D3542DA2A5A5009EE704 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7047D3532DA2A5A5009EE704 /* FormValidator.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		70F425772DA1603700D5F182 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				70F425F72DA16A3D00D5F182 /* AuthenticationService.swift */,
+				7047D3622DA2ADDF009EE704 /* FirestoreService.swift */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -153,7 +188,7 @@
 		70F425B72DA1618400D5F182 /* Spendid */ = {
 			isa = PBXGroup;
 			children = (
-				70881B972DA1C105000B60D2 /* Utilities */,
+				7047D3542DA2A5A5009EE704 /* Utilities */,
 				70F425AD2DA1618400D5F182 /* Application */,
 				70F425B02DA1618400D5F182 /* Infrastructure */,
 				70F425AE2DA1618400D5F182 /* Data */,
@@ -167,6 +202,8 @@
 		70F425C22DA161BB00D5F182 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				7047D36E2DA2BB90009EE704 /* Budgets */,
+				7047D36D2DA2BB89009EE704 /* Transactions */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -174,6 +211,8 @@
 		70F425C32DA161BD00D5F182 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				7047D35A2DA2A8C4009EE704 /* BudgetRepository.swift */,
+				7047D3602DA2A9F2009EE704 /* TransactionRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -181,6 +220,9 @@
 		70F425C42DA161BD00D5F182 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				7047D35E2DA2A993009EE704 /* Budget.swift */,
+				7047D3582DA2A790009EE704 /* Transaction.swift */,
+				70F426242DA18EF600D5F182 /* AuthRequest.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -188,7 +230,9 @@
 		70F425C52DA161CB00D5F182 /* DTOs */ = {
 			isa = PBXGroup;
 			children = (
-				70F426242DA18EF600D5F182 /* AuthRequest.swift */,
+				7047D3562DA2A5B9009EE704 /* BudgetDTO.swift */,
+				7047D35C2DA2A98D009EE704 /* TransactionDTO.swift */,
+				7047D3772DA2BDCE009EE704 /* FirestoreUserDTO.swift */,
 			);
 			path = DTOs;
 			sourceTree = "<group>";
@@ -196,6 +240,8 @@
 		70F425C62DA161CB00D5F182 /* RepositoryImpl */ = {
 			isa = PBXGroup;
 			children = (
+				7047D3642DA2B098009EE704 /* FirestoreBudgetRepositoryImpl.swift */,
+				7047D3662DA2B89C009EE704 /* FirestoreTransactionRepositoryImpl.swift */,
 			);
 			path = RepositoryImpl;
 			sourceTree = "<group>";
@@ -264,7 +310,8 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				70881B972DA1C105000B60D2 /* Utilities */,
+				7047D36D2DA2BB89009EE704 /* Transactions */,
+				7047D36E2DA2BB90009EE704 /* Budgets */,
 			);
 			name = Spendid;
 			packageProductDependencies = (
@@ -333,16 +380,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7047D3612DA2A9F2009EE704 /* TransactionRepository.swift in Sources */,
+				7047D35D2DA2A98D009EE704 /* TransactionDTO.swift in Sources */,
+				7047D3782DA2BDCE009EE704 /* FirestoreUserDTO.swift in Sources */,
 				70F4261D2DA1837000D5F182 /* SignInCoordinator.swift in Sources */,
 				70F4261E2DA1837000D5F182 /* SignInView.swift in Sources */,
 				70F426252DA18EF600D5F182 /* AuthRequest.swift in Sources */,
+				7047D3632DA2ADDF009EE704 /* FirestoreService.swift in Sources */,
+				7047D3652DA2B098009EE704 /* FirestoreBudgetRepositoryImpl.swift in Sources */,
+				7047D35B2DA2A8C4009EE704 /* BudgetRepository.swift in Sources */,
+				7047D35F2DA2A993009EE704 /* Budget.swift in Sources */,
 				70F4261F2DA1837000D5F182 /* SignInViewModel.swift in Sources */,
 				70F426202DA1837000D5F182 /* SignUpCoordinator.swift in Sources */,
 				70F426212DA1837000D5F182 /* SignUpView.swift in Sources */,
 				70F426222DA1837000D5F182 /* SignUpViewModel.swift in Sources */,
 				70F425B82DA1618400D5F182 /* AppDelegate.swift in Sources */,
+				7047D3592DA2A790009EE704 /* Transaction.swift in Sources */,
+				7047D3552DA2A5A5009EE704 /* FormValidator.swift in Sources */,
 				70F425B92DA1618400D5F182 /* SceneDelegate.swift in Sources */,
 				70F425DE2DA1659F00D5F182 /* AppNavigationControllerProvider.swift in Sources */,
+				7047D3572DA2A5B9009EE704 /* BudgetDTO.swift in Sources */,
 				70F425D32DA1627300D5F182 /* AppConfigurer.swift in Sources */,
 				70F425F12DA1681500D5F182 /* HomeCoordinator.swift in Sources */,
 				70F425F22DA1681500D5F182 /* HomeView.swift in Sources */,
