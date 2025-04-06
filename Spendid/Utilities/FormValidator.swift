@@ -16,12 +16,11 @@ enum FormValidator {
     return emailPredicate.evaluate(with: email)
   }
 
+  /// Validate password using regex.
+  /// - Parameter password: password to validate.
+  /// - Returns: A boolean that indicates whether the password is valid or not.
+  /// - Description: Least one uppercase character, least one digit, least one symbol, min 8 characters.
   static func validatePassword(_ password: String) -> Bool {
-    // least one uppercase,
-    // least one digit
-    // least one lowercase
-    // least one symbol
-    //  min 8 characters
     let password = password.trimmingCharacters(in: CharacterSet.whitespaces)
     let passwordRegex = "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%.^&<>*~:`-]).{8,}$"
     let passwordPredicate = NSPredicate(format: "SELF MATCHES %@", passwordRegex)

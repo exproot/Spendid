@@ -34,6 +34,6 @@ struct HomeView: View {
 
 }
 
-#Preview {
-  HomeView(viewModel: HomeViewModel(authService: AuthenticationService()))
-}
+//#Preview {
+//  HomeView(viewModel: HomeViewModel(authService: AuthenticationService()))
+//}
