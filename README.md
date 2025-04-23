@@ -1,5 +1,5 @@
 # Spendid
-### Your personal finance and budget tracker app.
+### Your personal finance and budget tracking app.
 
 ## Architecture
 **Clean Layered Architecture and MVVM**
@@ -14,10 +14,10 @@
 * **Presentation Layer (MVVM)** = ViewModels and SwiftUI Views
 
 ## Used Concepts
-* Dependency Injection
-* Coordinator Pattern
-* Data Transfer Object (DTO)
+* [Coordinator Pattern](Spendid/Presentation/Modules/Home/HomeCoordinator.swift)
+* [Data Transfer Objects (DTO)](Spendid/Data/DTOs/BudgetDTO.swift)
 * SwiftUI Views with UIKit Navigation
+* [Dependency Container](https://github.com/exproot/DependencyContainer) using Service-Locator Pattern
 
 ## Requirements
 * iOS version 15.6+
